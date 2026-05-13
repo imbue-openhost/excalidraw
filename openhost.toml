@@ -1,0 +1,16 @@
+[app]
+name = "excalidraw"
+version = "0.1.0"
+description = "Excalidraw whiteboard — sketch diagrams, wireframes, and notes with a hand-drawn feel. Drawings persist in the browser; no server-side storage needed."
+authors = ["Andrew Laack <andrew@laack.co>"]
+
+[runtime.container]
+image = "Dockerfile"
+port = 8080
+
+[routing]
+health_check = "/"
+
+[resources]
+memory_mb = 128
+cpu_millicores = 100
